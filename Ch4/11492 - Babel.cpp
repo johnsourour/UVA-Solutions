@@ -7,7 +7,6 @@ typedef pair<int,int> ii;
 typedef pair<int,ii> iii;
 
 	string S,E,x1,x2,w;
-vector<string> lang;
 vector<string> words;
 map<string,int> ml;
 map<string,int> mw;
@@ -47,15 +46,14 @@ int main()
 		mw.clear();
 		words.clear();
 		ml.clear();
-		lang.clear();
 		cin>>S>>E;
-		if(ml.find(S)==ml.end()){ml.insert(si(S,k++));lang.push_back(S);}
-		if(ml.find(E)==ml.end()){ml.insert(si(E,k++));lang.push_back(E);}
+		if(ml.find(S)==ml.end())ml.insert(si(S,k++));
+		if(ml.find(E)==ml.end())ml.insert(si(E,k++));
 		while(M--)
 		{
 			cin>>x1>>x2>>w;
-			if(ml.find(x1)==ml.end()){ml.insert(si(x1,k++));lang.push_back(x1);}
-			if(ml.find(x2)==ml.end()){ml.insert(si(x2,k++));lang.push_back(x2);}
+			if(ml.find(x1)==ml.end())ml.insert(si(x1,k++));
+			if(ml.find(x2)==ml.end())ml.insert(si(x2,k++));
 			
 			if(mw.find(w)==mw.end()){
 				mw.insert(si(w,wk++));

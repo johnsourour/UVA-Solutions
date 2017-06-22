@@ -71,8 +71,6 @@ int main()
 		{
 			for(ii a:adjList[i])
 			if(dist[i]+rdist[a.first]+a.second<=p)ans=max(ans,a.second);
-			for(ii a:radjList[i])
-			if(dist[a.first]+rdist[i]+a.second<=p)ans=max(ans,a.second);
 		}
 		printf("%d\n",ans);
 		

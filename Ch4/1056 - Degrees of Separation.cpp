@@ -60,5 +60,6 @@ int main()
 		else printf("%d\n\n",mx);
 		scanf("%d",&n);
 	}
+	return 0;
 	
 }

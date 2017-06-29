@@ -4,7 +4,6 @@ typedef long long ll;
 typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef pair<int, ii> iii;
-#define MAX_I 50005
 #define MAX_V 405
 #define INF 1e9
 map<int,int> mt;

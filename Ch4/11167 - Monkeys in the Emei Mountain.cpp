@@ -9,8 +9,6 @@ typedef pair<int, ii> iii;
 #define INF 1e9
 map<int,int> mt;
 int res[MAX_V][MAX_V], f, s, t, n, m;
-int arr[MAX_I];
-int edges[MAX_I];
 set<int> sint;
 vector<ii> intervals;
 vector<iii> monkeys;
@@ -49,7 +47,6 @@ void EdmondKarps()
 void init()
 {
 	memset(res, 0, sizeof res);
-	memset(arr, 0, sizeof arr);
 	sint.clear();
 	intervals.clear();
 	monkeys.clear();
@@ -90,22 +87,6 @@ void init()
 
 	}
 
-}
-int getLow(int st, int en, int cur)
-{
-	int low = 1e9, ind, cc = 0, kk = cur;
-	while (cc<en - st)
-	{
-		if (kk>en)kk = st;
-		if (arr[kk]<low)
-		{
-			low = arr[kk];
-			ind = kk;
-		}
-		kk++;
-		cc++;
-	}
-	return ind;
 }
 void output()
 {

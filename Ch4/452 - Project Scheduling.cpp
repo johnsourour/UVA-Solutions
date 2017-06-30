@@ -1,16 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-map<char,int> m;
-int cnt;
-int add(char c)
-{
-	if(m.find(c)==m.end()){
-		cnt++;
-		m.insert(make_pair(c,cnt-1));
-		return cnt-1;
-	}
-	else return m[c];
-}
 int main()
 {
 	int T,cur,from;
@@ -22,14 +11,12 @@ int main()
 	vector<vector<int> > adjList;
 	while(T--)
 	{
-		cnt=0;
-		m.clear();
 		adjList.clear();
 		adjList.resize(28);
 		priority_queue<int> Q;
 		while(getline(cin,s) && s!="")
 		{
-			cur=add(s.at(0));
+			cur=s.at(0)-'A';
 			s.erase(0,2);num="";
 			while(s.length()>0 && s.at(0)!=' ')
 			{
@@ -43,7 +30,7 @@ int main()
 				s.erase(0,1);
 				while(s.length()>0 && s.at(0)!=' ')
 				{
-					from=add(s.at(0));
+					from=s.at(0)-'A';
 					adjList[from].push_back(cur);
 					inDeg[cur]++;
 					s.erase(0,1);

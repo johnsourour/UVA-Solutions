@@ -1,9 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define INF 1e9
 typedef pair<int,int> ii;
 vector<vector<int> > adjList,adjList2;
-int nxt,mx;
 bool V[27];
 int bfs(int s, int s2)
 {

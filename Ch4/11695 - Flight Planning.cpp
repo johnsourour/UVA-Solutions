@@ -128,12 +128,10 @@ int main()
 {
 	int m,T,f,t,K=1;
 	vector<ii> edges;
-	bool show;
 	scanf("%d",&T);
 	ii w,b;
 	while(T--)
 	{
-		show=false;
 		scanf("%d",&n);
 		adjList.clear();
 		edges.clear();

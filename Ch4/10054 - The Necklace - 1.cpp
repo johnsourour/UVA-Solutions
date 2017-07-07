@@ -36,7 +36,7 @@ int main()
 			cnt[f]++;cnt[t]++;
 		}
 		bool possible=true;
-		int odd=0,first=-1;
+		int first=-1;
 		for(int i=0;i<MAX_BEADS && possible ;i++)
 		{
 			if(cnt[i]!=0 && first==-1)first=i;

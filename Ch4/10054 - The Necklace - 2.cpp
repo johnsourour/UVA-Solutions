@@ -35,7 +35,6 @@ int main()
 		cyc.clear();
 		adjList.clear();
 		adjList.resize(MAX_BEADS);
-	//	memset(adjMat, 0, sizeof adjMat);
 		memset(cnt, 0, sizeof cnt);
 		for(int i=0;i<n;i++)
 		{
@@ -46,7 +45,7 @@ int main()
 			cnt[f]++;cnt[t]++;
 		}
 		bool possible=true;
-		int odd=0,first=-1;
+		int first=-1;
 		for(int i=0;i<MAX_BEADS && possible ;i++)
 		{
 			if(cnt[i]!=0 && first==-1)first=i;
@@ -60,14 +59,11 @@ int main()
 		else
 		{
 			EulerTour(cyc.begin(),first);
-			//first++;
 			for (list<int>::iterator it=cyc.begin();it!=cyc.end();++it)
 			{
 				first++;
 				printf("%d %d\n",first,(*it)+1);
-				first=*it;
-				
-				
+				first=*it;				
 			}
 		}
 		if(T)printf("\n");

@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-typedef pair<int,int> ii;
 #define MAX 44725
 vector<int> T;
 void construct()

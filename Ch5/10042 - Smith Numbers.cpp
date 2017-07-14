@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-vector<int> prime;
 bool isPrime(int n)
 {
 	for(int i=2;i*i<=n;i++)
@@ -31,11 +29,9 @@ int sumP(int n)
 		{
 			tot+=sumD(i);
 			num/=i;
-		//	cout<<i<<endl;
 		}
 		else i++;
 	}
-//	cout<<num<<endl;
 	return tot+sumD(num);
 }
 int main()

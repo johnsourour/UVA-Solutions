@@ -1,11 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define start 1960
-vector<int> mx;
 int main()
 {
 	int N,bits;
-  double tot,mx;
+	double tot,mx;
 	scanf("%d",&N);
 	while(N)
 	{

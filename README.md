@@ -1,2 +1,4 @@
 # UVA-Solutions
-C++11 solutions All solutions are tested and accepted (AC) Done by johnsourour
+C++/Java UVA Online Judge solutions.
+All solutions are AC.
+Done by johnsourour.

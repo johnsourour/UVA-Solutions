@@ -20,6 +20,8 @@ class Main
 	}
 	static int cnt(BigInteger n, BigInteger k)
 	{
+		BigInteger tmp = n.subtract(k);
+ 		if(k.compareTo(tmp)>0)k=tmp;
 		BigInteger prod = BigInteger.ONE;
 		k=k.add(BigInteger.ONE);
 		for (BigInteger i = BigInteger.ONE; !i.equals(k); i=i.add(BigInteger.ONE))

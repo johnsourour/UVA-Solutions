@@ -1,11 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 int main()
 {
-	int n;
-	while(scanf("%d",&n)!=EOF && n)
+	ll n;
+	while(scanf("%lld",&n)!=EOF && n)
 	{
-		int s=sqrt(n);
+		ll s=sqrt(n);
 		if(s*s==n)printf("yes\n");
 		else printf("no\n");
 	}
